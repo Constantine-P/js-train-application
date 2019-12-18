@@ -1,0 +1,206 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: #ffbf31;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-control label, .button-primary, .button-danger {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form-control input, select, textarea {
+    border-radius: 5px;
+    border: 1px solid grey;
+    min-height: 30px;
+}
+
+.button-primary {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #4caf50;
+    border: 1px solid grey;
+    color: white;
+}
+
+.button-danger {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #af4952;
+    border: 1px solid grey;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+.w-container {
+    margin: 0 auto;
+    width: 600px;
+}
+
+textarea {
+    resize: none;
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid #4caf50;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    border-bottom: 1px solid grey;
+}
+
+.active {
+    border-top: 2px solid #4caf50;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: none;
+}
+
+.invalid {
+    border: 1px solid red !important;
+
+}
+
+.validation-error {
+    color: red;
+}
+
+.cssload-container{
+    position:relative;
+    margin-top: 50px;
+}
+
+.cssload-whirlpool,
+.cssload-whirlpool::before,
+.cssload-whirlpool::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgb(204,204,204);
+    border-left-color: rgb(0,0,0);
+    border-radius: 974px;
+    -o-border-radius: 974px;
+    -ms-border-radius: 974px;
+    -webkit-border-radius: 974px;
+    -moz-border-radius: 974px;
+}
+
+.cssload-whirlpool {
+    margin: -24px 0 0 -24px;
+    height: 49px;
+    width: 49px;
+    animation: cssload-rotate 1150ms linear infinite;
+    -o-animation: cssload-rotate 1150ms linear infinite;
+    -ms-animation: cssload-rotate 1150ms linear infinite;
+    -webkit-animation: cssload-rotate 1150ms linear infinite;
+    -moz-animation: cssload-rotate 1150ms linear infinite;
+}
+
+.cssload-whirlpool::before {
+    content: "";
+    margin: -22px 0 0 -22px;
+    height: 43px;
+    width: 43px;
+    animation: cssload-rotate 1150ms linear infinite;
+    -o-animation: cssload-rotate 1150ms linear infinite;
+    -ms-animation: cssload-rotate 1150ms linear infinite;
+    -webkit-animation: cssload-rotate 1150ms linear infinite;
+    -moz-animation: cssload-rotate 1150ms linear infinite;
+}
+
+.cssload-whirlpool::after {
+    content: "";
+    margin: -28px 0 0 -28px;
+    height: 55px;
+    width: 55px;
+    animation: cssload-rotate 2300ms linear infinite;
+    -o-animation: cssload-rotate 2300ms linear infinite;
+    -ms-animation: cssload-rotate 2300ms linear infinite;
+    -webkit-animation: cssload-rotate 2300ms linear infinite;
+    -moz-animation: cssload-rotate 2300ms linear infinite;
+}
+
+
+
+@keyframes cssload-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes cssload-rotate {
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes cssload-rotate {
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes cssload-rotate {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+.panel {
+    border: 1px solid grey;
+}
